@@ -1,0 +1,85 @@
+@import "picture.css";
+
+* {
+    margin: 0%;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+  
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* 높이를 같게 유지 */
+    height: 100vh;
+}
+  
+.mainBox {
+    display: flex;
+    flex-direction: row; /* 가로로 배치 */
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.mainBox_first,
+.mainBox_second,
+.mainBox_third {
+    flex: 1; /* 각 섹션이 동일한 비율로 공간을 차지하게 합니다 */
+    padding: 20px;
+    background-color: transparent; /* 배경색을 투명하게 설정 */
+    border: none; /* 경계 제거 */
+}
+  
+h3 {
+    margin: 10px 0;
+}
+  
+#todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+#todo-form input {
+    flex: 2; /* 입력박스의 flex 비율을 2로 설정하여 넓이 증가 */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+#todo-form input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+  
+#todo-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+  
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+  
+#todo-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#firstBox_remainDay {
+    margin-top: 100px;
+}

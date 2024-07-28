@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myTodolist</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="mainBox">
+        <div class="mainBox_first">
+          <div id="firstBox_userName">
+            <div>
+              <form class="hidden" id="login-form">
+                <input
+                  required
+                  maxlength="15"
+                  type="text"
+                  placeholder="이름을 입력하세요"
+                />
+                <input type="submit" value="Log In" />
+              </form>
+              <h1 id="greeting" class="hidden"></h1>
+            </div>
+          </div>
+          <div id="firstBox_weather">
+            <h3></h3>
+            <h3></h3>
+          </div>
+          <div id="firstBox_remainDay">
+            <h3>D-day⛄</h3>
+            <div>
+              <div></div>
+              <h2 id="dDay">00일00시간00분00초</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mainBox_second">
+          <h3>내일 할 일</h3>
+          <form id="todo-form">
+            <input type="text" placeholder="입력하세요" required />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+        <div class="mainBox_third">
+          <div id="thirdBox_date">
+            <div>
+              <h2 id="clock">00:00:00</h2>
+              <h2 id="day">0000년 0월 0일 0요일</h2>
+            </div>
+          </div>
+          <div id="thirdBox_famousSaying">
+            <div id="quote">
+              <h3></h3>
+              <h3></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <h2 id="clock">00:00:00</h2>
+
+    <h2 id="dDay">00일00시간00분00초</h2>
+
+    <h2 id="day">0000년 0월 0일 0요일</h2>
+
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="이름을 입력하세요"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="입력하세요" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div> -->
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/date.js"></script>
+  </body>
+</html>
